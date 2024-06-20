@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashBoardController">
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #BAC4D4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashBoardController">
    <children>
-      <JFXButton layoutX="269.0" layoutY="200.0" text="Button" />
+      <AnchorPane prefHeight="83.0" prefWidth="1024.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="879.0" layoutY="11.0" prefHeight="24.0" prefWidth="120.0" text="Date" />
+            <Label layoutX="880.0" layoutY="49.0" prefHeight="24.0" prefWidth="120.0" text="Time" />
+         </children>
+      </AnchorPane>
+      <TableView layoutX="14.0" layoutY="384.0" prefHeight="356.0" prefWidth="998.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <TextField layoutX="14.0" layoutY="98.0" prefHeight="68.0" prefWidth="992.0" />
    </children>
 </AnchorPane>
