@@ -1,26 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #BAC4D4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashBoardController">
+<AnchorPane prefHeight="806.0" prefWidth="1250.0" style="-fx-background-color: #273C7314;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashBoardController">
    <children>
-      <AnchorPane prefHeight="83.0" prefWidth="1024.0" style="-fx-background-color: white;">
+      <AnchorPane layoutY="-2.0" prefHeight="77.0" prefWidth="1250.0" style="-fx-background-color: white; -fx-background-radius: 0 0 15 15; -fx-border-color: #fad390; -fx-border-radius: 0 0 15 15;" styleClass="border" stylesheets="@../style/border_radius.css">
          <children>
-            <Label layoutX="879.0" layoutY="11.0" prefHeight="24.0" prefWidth="120.0" text="Date" />
-            <Label layoutX="880.0" layoutY="49.0" prefHeight="24.0" prefWidth="120.0" text="Time" />
+            <Label fx:id="lblDate" layoutX="1109.0" layoutY="9.0" prefHeight="24.0" prefWidth="120.0" textFill="#273c73">
+               <font>
+                  <Font name="Dyuthi Regular" size="16.0" />
+               </font></Label>
+            <Label fx:id="lblTime" layoutX="1110.0" layoutY="45.0" prefHeight="24.0" prefWidth="120.0" textFill="#273c73">
+               <font>
+                  <Font name="Dyuthi Regular" size="16.0" />
+               </font></Label>
          </children>
       </AnchorPane>
-      <TableView layoutX="14.0" layoutY="384.0" prefHeight="356.0" prefWidth="998.0">
+      <TableView layoutX="50.0" layoutY="426.0" prefHeight="356.0" prefWidth="1151.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn prefWidth="75.0" text="Desc" />
+          <TableColumn prefWidth="75.0" text="Desc" />
         </columns>
       </TableView>
-      <TextField layoutX="14.0" layoutY="98.0" prefHeight="68.0" prefWidth="992.0" />
+      <TextField alignment="TOP_LEFT" layoutX="50.0" layoutY="117.0" prefHeight="68.0" prefWidth="992.0" style="-fx-background-radius: 20; -fx-background-color: #FAD39054; -fx-border-color: #40739e; -fx-border-radius: 20;" styleClass="border" stylesheets="@../style/border_radius_txtArea.css">
+         <font>
+            <Font name="Dyuthi Regular" size="16.0" />
+         </font></TextField>
+      <JFXButton layoutX="758.0" layoutY="387.0" onAction="#btnAddToCartOnAction" prefHeight="24.0" prefWidth="70.0" style="-fx-background-color: #273c73; -fx-background-radius: 25;" stylesheets="@../style/btn_hover.css" text="Add" textFill="#f8c291">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="923.0" layoutY="387.0" onAction="#btnUpdateOnAction" prefHeight="28.0" prefWidth="80.0" style="-fx-background-color: #273c73; -fx-background-radius: 25;" stylesheets="@../style/btn_hover.css" text="Update" textFill="#f8c291">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="1017.0" layoutY="387.0" onAction="#btnDeleteOnAction" prefHeight="28.0" prefWidth="80.0" style="-fx-background-color: #273c73; -fx-background-radius: 25;" stylesheets="@../style/btn_hover.css" text="Delete" textFill="#f8c291">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="1110.0" layoutY="387.0" onAction="#btnClearOnAction" prefHeight="28.0" prefWidth="80.0" style="-fx-background-color: #273c73; -fx-background-radius: 25;" stylesheets="@../style/btn_hover.css" text="Clear" textFill="#f8c291">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="840.0" layoutY="386.0" onAction="#btnSaveOnAction" prefHeight="24.0" prefWidth="70.0" style="-fx-background-color: #273c73; -fx-background-radius: 25;" stylesheets="@../style/btn_hover.css" text="Save" textFill="#f8c291">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
    </children>
 </AnchorPane>
