@@ -14,6 +14,7 @@ public class launcher extends Application {
     public void start(Stage stage) throws Exception {
         stage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("/view/dash_board.fxml"))));
         stage.setTitle("Dash Board");
+        stage.setResizable(false);
         stage.show();
     }
 }
